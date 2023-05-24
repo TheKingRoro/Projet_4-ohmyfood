@@ -1,0 +1,78 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-colum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin purple-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    color: white;
+    background: linear-gradient(#FF79DA -11.44%, #9356DC 123.93%);
+    box-shadow: 0px 4px 10px 0px #00000040;
+    transition: 800ms;
+
+    &:hover {
+        opacity: 0.8;
+        box-shadow: 0px 4px 10px 0px $color-element;
+
+    }
+}
+
+@mixin title {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 26px;
+    text-align: left;
+}
+
+@mixin logo-heart-full {
+    position: absolute;
+    opacity: 0;
+    background: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 800ms;
+
+    &:hover {
+        position: absolute;
+        opacity: 1;
+        background: linear-gradient(#9356DC, #FF79DA);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+}
+
+@mixin logo {
+    font-family: $font-family-logo;
+    font-weight: 400;
+    color: #101010;
+}
+
+@mixin card-menu-delay {
+    animation-duration: 3s;
+    animation-name: menu-dev;
+    transform: scale(0);
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
