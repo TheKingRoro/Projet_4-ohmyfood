@@ -45,7 +45,7 @@ header {
 
 .explorer {
     @include flex-colum;
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
 
     .explorer-title {
         margin-top: 39px;
@@ -97,7 +97,7 @@ header {
             margin-left: 12px;
             border-radius: 20px;
             box-shadow: 0px 4px 15px 0px #00000026;
-            background: #F6F6F6;
+            background: #f6f6f6;
             gap: 27px;
 
             .card-number {
@@ -113,7 +113,7 @@ header {
             }
 
             .fonctionnement-card-icon {
-                color: #7E7E7E;
+                color: #7e7e7e;
                 height: 22px;
                 width: 14px;
                 border-radius: 0px;
@@ -126,20 +126,18 @@ header {
             .fonctionnement-card-text {
                 white-space: nowrap;
                 font-size: 16px;
-                font-weight: 500px;
+                font-weight: 500;
             }
         }
     }
 }
 
 .restaurants {
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     padding: 54px 20px 48px 20px;
-
 
     .title {
         @include title;
-
     }
 
     .restaurants-cards {
@@ -174,7 +172,6 @@ header {
                 width: 80px;
                 height: 29px;
                 color: #008766;
-
             }
         }
 
@@ -210,7 +207,7 @@ header {
             }
 
             .full {
-                @include logo-heart-full
+                @include logo-heart-full;
             }
         }
     }
@@ -218,27 +215,26 @@ header {
 
 footer {
     background-color: $color-element;
-    padding: 22px 100px 22px 25px;
+    padding: 22px 50px 22px 25px;
 
     .logo {
         font-family: $font-family-logo;
         color: $color-general;
         font-size: 18px;
+        padding-bottom: 18px;
     }
 
     .footer-all-list {
-        @include flex-wrap;
-        justify-content: left;
-        gap: 7px;
-
         p {
             font-size: 16px;
             color: $color-general;
+            padding-bottom: 7px;
         }
 
         .footer-link {
-            width: 168px;
+            white-space: nowrap;
             font-weight: 500;
+            padding-right: 7px;
         }
 
         .footer-link-legal {

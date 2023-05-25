@@ -1,5 +1,4 @@
 @media (min-width: 768px) and (max-width: 1440px) {
-
     header {
         height: 97px;
     }
@@ -22,7 +21,6 @@
             justify-content: space-between;
         }
 
-
         .restaurants-card {
             width: 47%;
         }
@@ -41,12 +39,23 @@
     footer {
         display: flex;
         flex-direction: row-reverse;
+        justify-content: space-between;
+
         padding-top: 57px;
+
+        .logo {
+            padding-bottom: 0px;
+            box-sizing: content-box;
+        }
+
+        .footer-all-list {
+            display: flex;
+            gap: 40px;
+        }
     }
 }
 
 @media (min-width: 1024px) {
-
     .restaurants {
         padding-left: 100px;
         padding-right: 100px;
@@ -62,6 +71,20 @@
             flex-direction: row;
             justify-content: space-between;
             gap: 5px;
+        }
+    }
+
+    footer {
+        justify-content: right;
+        .footer-all-list {
+            padding-right: 140px;
+        }
+        .footer-link {
+            display: flex;
+        }
+
+        .footer-link-legal {
+            display: flex;
         }
     }
 }
